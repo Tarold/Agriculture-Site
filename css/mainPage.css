@@ -1,5 +1,7 @@
 header {
     background-image: url(../images/bg.png);
+    background-size: cover;
+    height: 81vh;
 }
 
 .title {
