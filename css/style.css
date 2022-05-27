@@ -473,8 +473,7 @@ p {
 }
 
 .headerImg {
-    background-image: url(/images/tomatoAll/bgTomatoAll.png);
-    background-size: 140%;
+    background-image: url('../images/tomatoAll/bgTomatoAll.png');
     height: 480px;
     background-position: center;
 }
