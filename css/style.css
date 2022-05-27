@@ -100,6 +100,14 @@ li {
     margin-top: 5px;
 }
 
+.burgerMenu {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+}
+.burgerMenu img {
+    height: 40px;
+}
 .menuUp {
     display: block;
 }
@@ -204,3 +212,369 @@ footer {
     font-size: 14px;
     padding: 10px 0;
 }
+
+@media (max-width: 1060px){
+    .footer__link {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 991px){
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu__item {
+        margin-top: -25px;
+    }
+
+    .footer__item {
+        margin: 0 5px;
+    }
+    .footer__link {
+        margin-bottom: 15px;
+    }
+    .openMenu {
+        visibility: visible;
+    }
+    .menuUp{
+        display: none;
+    }
+
+
+}
+@media (max-width: 767px){
+    .menu__item a {
+        font-size: 16px;
+    }
+    .menu__item {
+        margin: 0 5px;
+    }
+    .footer__item a {
+        font-size: 14px;
+    }
+    .footer__menu {
+        display: block;
+        margin-left: -20px;
+        text-align: center;
+        }
+    .search {
+        margin-bottom: -30px;
+    }
+}
+@media (max-width: 575px){
+    .burgerMenu {
+        margin-right: 25px;
+    }
+}
+@media (max-width: 403px){
+    .burgerMenu {
+        margin-right: 25px;
+    }
+    .search input {
+        width: 70%;
+    }
+}
+/* Main page */
+header {
+    background-image: url(../images/bg.png);
+}
+
+.title {
+    padding: 240px 0 270px 0;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #735440;
+}
+
+.title button {
+    margin-top: 75px;
+    width: 160px;
+    height: 55px;
+    background-color: #57984C;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 20px, 30px;
+}
+
+.title button:hover {
+    background-color: #67b15a;
+    transition: all 0.3s ease;
+}
+
+.products {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.vision {
+    background-image: url('../images/Union.png');
+    padding-top: 50px;
+}
+
+.vision__title {
+    font-size: 64px;
+}
+
+.vision__text {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.vision__img img {
+    width: 100%;
+    box-shadow: 14px 14px 8px 0px rgba(34, 60, 80, 0.06);
+}
+
+.vision__2 {
+    padding: 100px 0;
+}
+
+#btn_sub {
+    margin-bottom: 20px;
+}
+
+.mainActiv {
+    text-align: center;
+}
+
+.mainActiv__title {
+    margin-top: 95px;
+}
+
+.mainActiv__product h2 {
+    font-size: 24px;
+    color: #57984C;
+}
+
+.mainActiv__product p {
+    font-size: 18px;
+    margin-bottom: 95px;
+}
+
+.mainActiv__img {
+    margin-bottom: 40px;
+}
+
+.mainActiv__img img {
+    width: 100%;
+}
+
+.mainActiv__line {
+    padding: 10px 0;
+}
+
+
+@media (max-width: 991px){
+
+    .mainActiv__product p {
+        margin-bottom: 0px;
+    }
+    
+    .mainActiv__img {
+        margin-bottom: -50px;
+    }
+
+    .mainActiv__last {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 991px){
+
+    .title {
+        padding: 140px 0 170px 0;
+    }
+    .vision {
+        text-align: center;
+    }
+    .vision__img {
+        padding-top: 50px;
+    }
+
+
+}
+@media (max-width: 767px){
+    .product_item img {
+        height: 100px;
+    }
+    header {
+        background-position: bottom;
+    }
+    .vision__img img {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1  {
+      width: 100%;
+      *width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+      width: 14.285714285714285714285714285714%;
+      *width: 14.285714285714285714285714285714%;
+      max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+    }
+  }
+   
+  @media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+      width: 14.285714285714285714285714285714%;
+      *width: 14.285714285714285714285714285714%;
+      max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+    }
+}
+/* tomatoAll*/
+section {
+    background-color: #e1ccec;
+}
+
+hr {
+    background-color: #324950;
+}
+
+p {
+    font-size: 17px;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.headerImg {
+    background-image: url(../images/beetAll/beetBg.jpg);
+    background-size: 140%;
+    height: 480px;
+    background-position: center;
+}
+
+.visionMission .title__text {
+    font-size: 44px;
+}
+
+.visionMission {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.crosses {
+    margin-bottom: 30px;
+}
+
+.borderedLeft {
+    border-left: 3px solid #EB5757;
+}
+
+.borderedLeft .borderedLeft__text {
+    margin-left: 25px;
+}
+
+.markets h2 {
+    font-size: 20px;
+    max-width: 290px;
+}
+
+.markets .container {
+    background-color: #fff;
+}
+
+.markets__items {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.products {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.products .items {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.products .item {
+    color: #57984C;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.products .item img {
+    width: 100%;
+}
+
+.products .item__text {
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+.products h2 {
+    font-size: 20px;
+}
+
+.products p {
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+
+.products a {
+    color: #324950;
+}
+
+.products a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 21px 15px rgba(50, 73, 80, 0.2);
+}
+
+@media (max-width: 767px){
+    .headerImg {
+        height: 250px;
+        background-position: top;
+        background-size: 300%;
+    }
+    .visionMission .title__text {
+        text-align: center;
+    }
+    .crosses {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 991px){
+
+}
+/* ------------------ */
