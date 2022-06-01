@@ -280,6 +280,7 @@ footer {
 /* Main page */
 header {
     background-image: url(../images/bg.png);
+    background-position: center;
 }
 
 .title {
@@ -475,6 +476,7 @@ p {
 
 .header {
     background-color: #fff;
+    max-height: 850px;
 }
 
 .headerImg {
@@ -718,10 +720,31 @@ p {
     font-weight: bold;
     font-size: 15px;
 }
+
+#Centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media (max-width: 768px){
+
+    .tomatoOne .title_text h1, h2 {
+        font-size: 24px;
+    }
+    .quality_text {
+        font-size: 20px;
+    }
+    #Centre{
+        text-align: center;
+    }
+    
+}
 /* contactUs*/
 .headerImgUs {
     background-image: url(../images/contactUs/image7.png);
-    height: 480px;
+    height: 48vh;
     background-position: center;
 }
 
