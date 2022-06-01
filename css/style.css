@@ -104,14 +104,18 @@ li {
     z-index: 10;
     position: absolute;
     right: 0;
+    
 }
 .burgerMenu img {
     height: 40px;
 }
 .menuUp {
-    display: block;
+    display: none;
 }
 
+.menuDown {
+    display: block;
+}
 
 .active {
     z-index: 3;
@@ -401,7 +405,7 @@ header {
 @media (max-width: 991px){
 
     .title {
-        padding: 140px 0 170px 0;
+        padding: 70px 0 90px 0;
     }
     .vision {
         text-align: center;
@@ -421,6 +425,21 @@ header {
     }
     .visImg img {
         width: 100%;
+    }
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .visTitle h1{
+        font-size: 24px;
+    }
+
+    .visText h1{
+        font-size: 18px;
+    }
+
+    .ActivTitle h1{
+        font-size: 32px;
     }
     
 }
@@ -550,7 +569,7 @@ p {
 }
 
 .products p {
-    margin-top: -5px;
+    margin-top: 5px;
     padding-bottom: 5px;
 }
 
@@ -563,10 +582,9 @@ p {
     text-decoration: none;
 }
 
-
 @media (max-width: 767px){
     .headerImg {
-        height: 250px;
+        height: 240px;
         background-position: top;
         background-size: 300%;
     }
@@ -580,10 +598,6 @@ p {
     .search {
         margin-bottom: 20px;
     }
-
-}
-
-@media (max-width: 991px){
 
 }
 /* tomatoOne*/
@@ -628,11 +642,11 @@ p {
     padding-bottom: 170px;
 }
 
-.tomatoOne .title_text h1, h2{
+.tomatoOne .titlText h1, h2{
     font-size: 54px;
 }
 
-.tomatoOne .title_text h2{
+.tomatoOne .titlText h2{
     color: #57984C;
 }
 
@@ -730,7 +744,7 @@ p {
 
 @media (max-width: 768px){
 
-    .tomatoOne .title_text h1, h2 {
+    .tomatoOne .titlText h1, h2 {
         font-size: 24px;
     }
     .quality_text {
@@ -834,3 +848,14 @@ p {
     padding-left: 15px;
 }
 /* ------------------- */
+
+@media (max-width: 768px){
+
+        .menuDown{
+            display: none;
+        }
+        .burgerMenu {
+            display: block;
+        }
+        
+    }
