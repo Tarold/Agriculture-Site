@@ -316,7 +316,7 @@ header {
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 20px;
-    background-color: #FCF0F0;
+    background-color: #defadd;
 }
 
 .vision {
@@ -481,7 +481,7 @@ header {
 }
 
 section {
-    background-color: #FCF0F0;
+    background-color: #f0fcf2;
     ;
 }
 
@@ -499,7 +499,7 @@ p {
 }
 
 .headerImg {
-    background-image: url(../images/tomatoAll/bgTomatoAll.png);
+    background-image: url(../images/pepers/bgAll.webp);
     height: 480px;
     background-position: center;
 }
@@ -518,7 +518,7 @@ p {
 }
 
 .borderedLeft {
-    border-left: 3px solid #EB5757;
+    border-left: 3px solid #57eb6b;
 }
 
 .borderedLeft .borderedLeft_text {
@@ -603,7 +603,7 @@ p {
 /* tomatoOne*/
 .tomatoOne {
     background-image: url(../images/tomatoOne/tomatoOneBg.svg);
-    background-color: #f7f7f7;
+    background-color: #f8dfdf;
     padding-top: 18px;
     background-position: center;
     background-repeat: no-repeat;
@@ -705,7 +705,7 @@ p {
 }
 
 .textBlock_item span, .textBlock_item p{
-    color: #324950;
+    color: #2a7e2e;
     font-size: 17px;
 }
 
