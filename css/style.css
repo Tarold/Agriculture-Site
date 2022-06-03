@@ -603,7 +603,7 @@ p {
 /* tomatoOne*/
 .tomatoOne {
     background-image: url(../images/tomatoOne/tomatoOneBg.svg);
-    background-color: #f8dfdf;
+    background-color: #dff8eb;
     padding-top: 18px;
     background-position: center;
     background-repeat: no-repeat;
@@ -741,7 +741,9 @@ p {
     margin-right: auto;
     
 }
-
+.download button img {
+    height: 25px;
+}
 @media (max-width: 768px){
 
     .tomatoOne .titlText h1, h2 {
