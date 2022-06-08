@@ -1,0 +1,23 @@
+{
+  "name": "agriculture-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarold/Agriculture-Site.git"
+  },
+  "author": "Tarold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarold/Agriculture-Site/issues"
+  },
+  "homepage": "https://github.com/Tarold/Agriculture-Site#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.0"
+  }
+}
