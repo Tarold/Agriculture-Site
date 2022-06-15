@@ -108,6 +108,7 @@
 
     <section id="white" class="products">
         <div class="container-fluid text-center">
+            <button class="subscribe-for-push">SUBSCRIBE FOR PUSH NOTIFICATIONS</button>
             <div class="row">
                 <div class="col -md-1 d-flex flex-column">
                     <div class="prodItem">
@@ -310,6 +311,44 @@
             </div>
         </div>
     </footer>
+    <script>
+
+        function askPermission() {
+            return new Promise(function(resolve, reject) {
+                const permissionResult = Notification.requestPermission(function(result) {
+                    resolve(result);
+                });
+
+                if (permissionResult) {
+                    permissionResult.then(resolve, reject);
+                }
+            })
+            .then(function(permissionResult) {
+                if (permissionResult !== 'granted' ) {
+                    throw new Error('We weren\'t granted permission.');
+                }
+            });
+        }
+
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() {
+                console.log('Service worker registered!');
+            });
+
+            navigator.serviceWorker.ready.then(registration => {
+                if ('PushManager' in window) {
+                    document.querySelector('button.subscribe-for-push')
+                        .addEventListener('click', () => {
+                            if (confirm("Ви згодні отримувати повідомлення?") == true) {
+                                askPermission();
+                            }
+                        });
+                }
+            })
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
